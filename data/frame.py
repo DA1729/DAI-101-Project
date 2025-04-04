@@ -1,15 +1,15 @@
 import cv2
 import os
+import time
 
-# Define video and output folder
-video_path = 'video_data.mp4'  # Video is in the same folder as the script
-output_dir = 'frames'  # Folder to save extracted frames
+video_path = 'video_data.mp4'  
+output_dir = 'frames'
 
-# Ensure the output directory exists
+
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
 
-# Open video file
+
 cap = cv2.VideoCapture(video_path)
 i = 0
 frame_skip = 6
